@@ -1,8 +1,8 @@
 name: Manifest updater
 
 on:
-  push:
-    branches: [ github-actions ]
+  repository_dispatch:
+    types: [pushed]
 
 jobs:
   build:
